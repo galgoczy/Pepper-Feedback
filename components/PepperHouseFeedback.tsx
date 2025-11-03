@@ -163,9 +163,9 @@ export default function PepperHouseFeedback() {
           <Image
             src="https://pepperhouse.hu/wp-content/uploads/2022/03/cropped-pepper_logo2.png"
             alt="Pepper House logó"
-            width={270}
-            height={90}
-            className="h-[2.625rem] w-auto sm:h-[3.75rem]"
+            width={230}
+            height={77}
+            className="h-[2.25rem] w-auto sm:h-[3.2rem]"
             priority
             unoptimized
           />
