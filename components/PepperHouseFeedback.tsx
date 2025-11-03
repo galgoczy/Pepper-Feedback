@@ -161,11 +161,11 @@ export default function PepperHouseFeedback() {
       <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-2xl w-full">
         <div className="flex justify-center mb-8">
           <Image
-            src="/pepperhouse-logo.svg"
-            alt="Pepper House logo"
-            width={320}
-            height={72}
-            className="h-12 w-auto sm:h-16"
+            src="/pepperhouse-logo-official.svg"
+            alt="Pepper House logó"
+            width={360}
+            height={120}
+            className="h-14 w-auto sm:h-20"
             priority
           />
         </div>
