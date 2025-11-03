@@ -25,12 +25,26 @@ npm start
    git remote add origin https://github.com/felhasznalo/pepper-house-feedback.git
    ```
 
-3. Pushold fel a változtatásokat a `main` ágra:
+3. Ellenőrizd, melyik ágon dolgozol:
 
    ```bash
-   git push -u origin main
+   git branch --show-current
    ```
 
-4. Ha később újabb módosításokat végzel, használd a `git push` parancsot a frissítések feltöltéséhez.
+   - Ha az eredmény `main`, akkor használd az alábbi parancsot:
+
+     ```bash
+     git push -u origin main
+     ```
+
+   - Ha például egy `work` nevű ágon vagy, akkor így tudod feltölteni:
+
+     ```bash
+     git push -u origin work
+     ```
+
+   A `-u` kapcsoló beállítja az upstreamet, így a későbbi `git push` és `git pull` parancsok már automatikusan a megfelelő ágra mutatnak.
+
+4. Ha később újabb módosításokat végzel, használd a `git push` parancsot a frissítések feltöltéséhez. Ugyanez igaz arra is, ha több ágat szeretnél a távoli repóba feltölteni (pl. `git push origin main`).
 
 Ezt követően a repó importálható Vercelbe, ahol a deploy automatikusan lefut a `main` ágra érkező pushok után.
