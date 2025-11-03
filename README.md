@@ -49,4 +49,6 @@ npm start
 
 5. A Vercelben állítsd be, hogy melyik ágra figyeljen az automatikus deploy. Ha a `main` a publikált ág, gondoskodj róla, hogy a változtatásaid oda kerüljenek (merge vagy közvetlen push). Ha másik ágról szeretnél deployt, válaszd ki azt a Vercel beállításai között.
 
+6. Ha korábban átírtad az “Output Directory” mezőt, állítsd vissza alapértelmezettre, vagy hagyd, hogy a repo gyökerében található `vercel.json` fájl kezelje (`.next`). Így a buildelt Next.js alkalmazás kerül publikálásra.
+
 Ezt követően a repó importálható Vercelbe, ahol a deploy automatikusan lefut a kiválasztott ágra érkező pushok után.
