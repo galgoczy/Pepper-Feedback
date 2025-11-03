@@ -163,9 +163,9 @@ export default function PepperHouseFeedback() {
           <Image
             src="/pepperhouse-logo.svg"
             alt="Pepper House logo"
-            width={220}
-            height={64}
-            className="h-16 w-auto"
+            width={320}
+            height={72}
+            className="h-12 w-auto sm:h-16"
             priority
           />
         </div>
