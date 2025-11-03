@@ -47,4 +47,6 @@ npm start
 
 4. Ha később újabb módosításokat végzel, használd a `git push` parancsot a frissítések feltöltéséhez. Ugyanez igaz arra is, ha több ágat szeretnél a távoli repóba feltölteni (pl. `git push origin main`).
 
-Ezt követően a repó importálható Vercelbe, ahol a deploy automatikusan lefut a `main` ágra érkező pushok után.
+5. A Vercelben állítsd be, hogy melyik ágra figyeljen az automatikus deploy. Ha a `main` a publikált ág, gondoskodj róla, hogy a változtatásaid oda kerüljenek (merge vagy közvetlen push). Ha másik ágról szeretnél deployt, válaszd ki azt a Vercel beállításai között.
+
+Ezt követően a repó importálható Vercelbe, ahol a deploy automatikusan lefut a kiválasztott ágra érkező pushok után.
