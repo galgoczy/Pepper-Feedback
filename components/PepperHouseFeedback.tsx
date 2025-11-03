@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useState } from "react";
 import { Star, Send, CheckCircle } from "lucide-react";
 
@@ -159,10 +160,14 @@ export default function PepperHouseFeedback() {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-4">
       <div className="bg-white rounded-2xl shadow-2xl p-8 max-w-2xl w-full">
         <div className="flex justify-center mb-8">
-          <div className="flex items-center gap-3">
-            <div className="w-2 h-16 bg-red-500 rounded-full transform -skew-y-12" />
-            <h1 className="text-4xl font-bold text-gray-800">pepperhouse</h1>
-          </div>
+          <Image
+            src="/pepperhouse-logo.svg"
+            alt="Pepper House logo"
+            width={220}
+            height={64}
+            className="h-16 w-auto"
+            priority
+          />
         </div>
 
         <div className="text-center mb-8">
